@@ -120,6 +120,3 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     infer(args)
-
-    # calling signature
-    # python -m tools.sample_4vis --config config/default_epapa.yaml

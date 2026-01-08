@@ -12,7 +12,7 @@ from torch.utils.data import DataLoader
 from models.unet_base import Unet
 from scheduler.linear_noise_scheduler import LinearNoiseScheduler
 import numpy as np
-from tools.train_mnist import Net
+from tools.train_classifier_mnist_digit import Net
 from dataset.mnist_dataset import GeneratedDataset
 
 from datetime import timedelta
