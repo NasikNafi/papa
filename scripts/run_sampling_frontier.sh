@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -A stf006
+##SBATCH -A ######
 #SBATCH -J diff-tuning
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:1
