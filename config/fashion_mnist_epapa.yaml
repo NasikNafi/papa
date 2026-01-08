@@ -1,0 +1,36 @@
+diffusion_params:
+  num_timesteps : 1000
+  beta_start : 0.0001
+  beta_end : 0.02
+
+model_params:
+  im_channels : 1
+  im_size : 28
+  down_channels : [32, 64, 128, 256]
+  mid_channels : [256, 256, 128]
+  down_sample : [True, True, False]
+  time_emb_dim : 128
+  num_down_layers : 2
+  num_mid_layers : 2
+  num_up_layers : 2
+  num_heads : 4
+
+train_params:
+  algo: 'epapa'
+  task_name: 'fashion_mnist'
+  batch_size: 1
+  num_epochs: 30
+  num_samples : 10
+  num_grid_rows : 5
+  lr: 0.00001
+  pref_loss_coef: 0.1
+  model_loss_coef: 0.009
+  epapa_k: 400
+  preference: [5, 7, 9]
+  full_exploitation: True
+  sampling_epoch: 1
+  sampling_size: 10
+  ckpt_name: 'ddpm_finetuned.pth'
+  base_ckpt_name: 'ddpm_fashion_mnist_ckpt.pth'
+  feedback_model: 'fashion_mnist_classifier.pt'
+  sample_path: 'output_epapa'
