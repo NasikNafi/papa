@@ -13,12 +13,14 @@ This repository implements [PAPA](https://arxiv.org/abs/####.#####) that efficie
 
 # Quickstart
 * Create a new conda environment with python 3.8 then run below commands
-* ```git clone https://github.com/explainingai-code/DDPM-Pytorch.git```
-* ```cd DDPM-Pytorch```
+* ```git clone https://github.com/NasikNafi/papa.git```
+* ```cd papa```
 * ```pip install -r requirements.txt```
+Details of the requiremets.txt will be available soon.
+
 * For training/sampling use the following commands with the desired configuration file. 
-* ```python -m tools.train_papa``` for training ddpm
-* ```python -m tools.sample_papa``` for generating images
+* ```python -m tools.train_papa``` trains papa and saves generated images for evaluation
+* ```python -m tools.sample_papa``` generates images for visualization
 
 ## Configuration
 * ```config/default_epapa.yaml``` - allows you to play with different components of DDPM and PAPA.
